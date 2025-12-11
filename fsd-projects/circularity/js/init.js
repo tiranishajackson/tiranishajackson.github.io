@@ -45,7 +45,10 @@ var init = function (window) {
 
 
         // TODO 7 : Use a loop to create multiple circles
+       for (var i = 0; i < 100; i++){
+        drawCircle()
 
+       }
 
 
 
@@ -76,7 +79,10 @@ var init = function (window) {
            game.checkCirclePosition (circles[5]);
 
             // TODO 8 / TODO 9 : Iterate over the array
-           
+           for (var i = 0; i < circles.length; i++){
+            physikz.updatePosition(circles[i]);
+            game.checkCirclePosition(circles[i]);
+           } 
             
         }
     
@@ -102,7 +108,6 @@ var init = function (window) {
             if(circle.y < 0){
                 circle.y = canvas.height;
             }
-
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
