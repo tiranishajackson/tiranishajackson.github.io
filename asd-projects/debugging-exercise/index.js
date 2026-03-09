@@ -84,7 +84,7 @@ function getId(number) {
 }
 
 // this adds a ghost into the HTML
-funtion addNewGhostElement(ghost, id) {
+function addNewGhostElement(ghost, id) {
   // this creates the HTML for a new ghost element
   var $ghost = $("<img>")
     .attr("id", id)
